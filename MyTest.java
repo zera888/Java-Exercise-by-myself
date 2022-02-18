@@ -1,15 +1,17 @@
 class Test {
-	private int a=10;
+	private int a;
+	
 	public int getInt() {
 		return a;
 	}
 }
+class son extends Test {}
+
 public class MyTest {
 
-	public static void main(String args[]) 
-	{
+	public static void main(String args[]) {
 		// TODO Auto-generated method stub
-		Test t=new Test();
+		son t= new son();
 		System.out.println("a="+t.getInt());
 	}
 
